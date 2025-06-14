@@ -82,9 +82,9 @@ a continuous function.
 Her er en tabel lavet med \texttt{booktabs}:
 
 \begin{table}[h!]
-  \centering
-  \caption{Massefylder. Refereres til med \cref{tab:massefylder}.}
+  \caption{En tabel med eksempler på massefylder. Vi kan referere til den som \cref{tab:massefylder}.}
   \label{tab:massefylder}
+  \centering
   \begin{tabular}{l c r}
     \toprule
     \textbf{Materiale} & \textbf{Symbol} & \textbf{Massefylde (\si{\kilo\gram\per\cubic\meter})} \\
@@ -92,8 +92,9 @@ Her er en tabel lavet med \texttt{booktabs}:
     Vand & \ce{H2O} & \num{1000} \\
     Jern & \ce{Fe} & \num{7874} \\
     Guld & \ce{Au} & \num{19300} \\
+    Henfald & \ce{^234_90Th -> ^0_-1\beta{} + ^234_91Pa} & \qty{1164562.554978}{\litre.\km\per\newton\squared.\second^{3.5}} \\
     \bottomrule
-  \end{tabular}  
+  \end{tabular}
 \end{table}
 
 \begin{sætning}[Pythagorean theorem]
@@ -119,7 +120,7 @@ There's no right rectangle whose sides measure 3cm, 4cm, and 6cm.
 
 Dette ses fra \cref{kont} og, del dels også fra \Cref{pythagorean}.
 
-Nu kigger vi på \Cref{kont,pythagorean,pythagoreandk}, \cref{abc} og \cref{tab:massefylder} versus \Cref{kont} og \Cref{pythagorean}.
+Nu kigger vi på \Cref{kont,pythagorean,pythagoreandk}, \cref{abc} og \cref{tab:massefylder} versus \Cref{kont} og \Cref{pythagorean}\footnote{\cite{greenwade93}}.
 
 \begin{lemma}
 Given two line segments whose lengths are \(a\) and \(b\) respectively there is a 
@@ -143,4 +144,7 @@ versus
 \end{alignat}
 Vi vi gerne vil fremhæve \cref{eq:fst,eq:mid} som de vigtigste.
 \label{LastPage} % Used for the "Side X af Y" footer
+\newpage
+\bibliographystyle{alpha}
+\bibliography{sample}
 \end{document}
